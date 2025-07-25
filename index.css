@@ -1,48 +1,116 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
 body {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
     background-color: rgba(0, 136, 255, 0.283);
-}
-
-nav {
-    background-color: #0082e6;
-    height: 80%;
-    width: 100%;
+    
 
 }
-label.logo {
+.logo {
+    font-size: 30px;
     color: white;
-    font-size: 20px;
-    line-height: 80px;
-    padding: 0 100px;
     font-weight: bold;
+    padding: 0 100px;
+    line-height: 80px;
+    background-color: rgb(72, 0, 255);
+    display: flex;
+    text-align: center;
+}
+.image-logo {
+    padding: 14px;
     float: left;
+    border-radius: 100px;
+}
+.navbar ul {
+    list-style-type: none;
+    background-color: rgba(0, 0, 255, 0.242);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
 
 }
-nav ul {
-    float: right;
-    margin-right: 2px;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
 }
+.navbar a:hover {
+    background-color: rgb(72, 0, 255);
+
+}
+.navbar li {
+    float: left;
+    
+}
+
 nav ul li {
     display: inline-block;
-    line-height: 80px;
 
 }
-nav ul li a {
-    color: white;
-    font-size: 15px;
-    padding: 8px;
-    border-radius: 3px;
-    text-transform: uppercase;
+/* navbar css code */
+
+.Oder-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
 }
-a.active,a:hover {
-    background: #1b9bff;
-    transition: .5s;
+
+.Oder-card {
+    height: 230px;
+    width: 200px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+
+}
+
+.Oder-card-content h3 {
+    font-size: 20px;
+}
+
+.Oder-card-content p {
+    font-size: 12px;
+}
+
+.Oder-card img {
+    padding: 10px;
+}
+
+/* Oder Card */
+
+.Oder-button {
+    background-color: rgba(0, 145, 255, 0.527);
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    
+}
+
+.Oder-button a {
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+}
+
+/* Oder Button */
+
+.styled-tabel {
+    width: 400px;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    box-shadow: 1px 2px 8px;
+    text-align: center;
+
 }
