@@ -1,180 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(0, 136, 255, 0.283);
-    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 136, 255, 0.283);
 
 }
-.logo {
+.container {
+    position: relative;
+    font-size: 50px;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.title {
+   padding: 5px;
+   font-size: 20px
+}
+
+.container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
     font-size: 30px;
-    color: white;
-    font-weight: bold;
-    padding: 0 100px;
-    line-height: 80px;
-    background-color: rgb(72, 0, 255);
-    display: flex;
-    text-align: center;
-}
-.image-logo {
-    padding: 14px;
-    float: left;
-    border-radius: 100px;
-}
-.navbar ul {
-    list-style-type: none;
-    background-color: rgba(0, 0, 255, 0.242);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
 
 }
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
+
+.container header::before {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.container form {
+    position: relative;
+    margin-top: 10px;
+    min-height: 490px;
+    background-color: #fff;
+    
+}
+
+.container form .form {
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.container form .form .second {
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.container form .details {
+    margin-top: 8px;
+
+}
+
+.container form .title {
     display: block;
-    text-align: center;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 
 }
-.navbar a:hover {
-    background-color: rgb(72, 0, 255);
 
+.form .fields .input.field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
 }
-.navbar li {
+
+.input.field label {
+    font-size: 16px;
+}
+
+.input.field input {
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input.field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.input.field input[type="date"]{
+    color: #707070;
+}
+
+.input.field input[type="date"]:valid{
+    color: #333;
+}
+
+.nextBtn {
     float: left;
-    
 }
 
-nav ul li {
-    display: inline-block;
 
-}
-/* navbar css code */
 
-.Oder-card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    
-}
-
-.Oder-card {
-    height: 230px;
-    width: 200px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    
-
-}
-
-.Oder-card-content h3 {
-    font-size: 20px;
-}
-
-.Oder-card-content p {
-    font-size: 12px;
-    font-family: sans-serif;
-}
-
-.Oder-card img {
-    padding: 10px;
-}
-
-/* Oder Card */
-
-.Oder-button {
-    background-color: rgba(0, 145, 255, 0.527);
-    border-radius: 1px;
-    padding: 5px 5px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    height: 30px;
-    width: 150px;
-
-}
-
-.Oder-button a {
-    text-decoration: none;
-    color: rgb(15, 14, 14);
-}
-
-/* Oder Button */
-
-.Contact {
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-    justify-content: center;
-    
-}
-
-.Contact h1 {
-    font-size: 40px;
-    
-}
-
-.contact-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.contact-card {
-    height: 250px;
-    width: 200px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-}
-
-.contact-card-content h3 {
-    font-size: 20px;
-}
-
-.contact-card-content p{
-    font-size: 12px;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
-.contact-card img {
-    padding: 10px;
-}
-
-/* contact card */
-
-.contact-button {
-    background-color: rgba(0, 145, 255, 0.527);
-    border-radius: 1px;
-    padding: 3px 2px 2px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    height: 30px;
-    width: 150px;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-
-.contact-button:active {
-    box-shadow: 0 2px 0 #f0f0f0;
-    transform: translateY(3px);
-}
-
-.contact-button a {
-    text-decoration: none;
-    color: rgb(15, 14, 14);    
-}
-
-/* contact button */
